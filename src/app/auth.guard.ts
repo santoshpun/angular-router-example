@@ -14,7 +14,7 @@ export class AuthGuard implements CanActivate {
 
     if (!this.auth.isLoggedIn()) {
       console.log('You don\'t have permission to view this page');
-      this.router.navigate['login'];
+      this.router.navigate(['login']);
       return false;
     }
 
